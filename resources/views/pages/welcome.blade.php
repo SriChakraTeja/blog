@@ -1,6 +1,9 @@
 @extends('layouts.main')
 
+@section('title','| HomePage')
+
 @section('content')
+<div class = "container">
     <div class = "row">
         <div class = "col-md-12">
             <div class="jumbotron">
@@ -44,5 +47,5 @@
             <h1>Side Bar</h1>
         </div>
     </div>
-
+</div>
 @endsection    

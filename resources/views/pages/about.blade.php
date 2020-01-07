@@ -1,5 +1,7 @@
 @extends('layouts.main')
 
+@section('title','| About')
+
 @section('content')
 <div class="container row col-md-12">
     <h1>About Me</h1>
