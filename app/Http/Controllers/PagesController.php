@@ -18,13 +18,14 @@ class PagesController extends Controller
 
     public function getAbout()
     {
-        $first = 'Sri';
-        $last = 'Chakra';
-
-        $fullname = $first." ".$last;
-        $email = "stadikonda@gmail.com";
-        //return view('pages.about')->with("email",$email);
-        return view('pages.about')->with("fullname",$fullname);
+        $firstname = "Sri";
+        $lastname = "Chakra";
+        $fullName = $firstname." ".$lastname;
+        $email = 'stadikonda@gmail.com';
+        $data = [];
+        $data['email'] = $email;
+        $data['fullName'] = $fullName;
+        return view('pages.about',compact('data'));
     }
 
     public function getIndex()
