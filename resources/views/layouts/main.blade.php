@@ -4,7 +4,6 @@
 @include('layouts._nav')
 
 @yield('content')
-
  
 @include('layouts._footer')
     
